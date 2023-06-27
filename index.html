@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script defer src="automation.js"></script>
+        <title>Pathfinding Visualizer</title>
+        <link rel="shortcut icon" type="image/png" href="pathfinderfavicon.png">
+    </head>
+    <body onload="startUp()">
+        <div id="main-div" class="row">
+            
+        </div>
+        <div id="buttonsDiv" class="startBtnDiv">
+            <h1 id="title" style="float: left; color: white; margin-left: 10px; margin-top: 15px;" onclick="titleClick()"><u>FireSafe Visualizer</u></h1>
+    
+            
+            <button id="insertCheckpoint" style="width: 150px;">Insert Checkpoint</button>
+            <button id="reset" style="width: 150px;">Reset Board</button>
+            <button id="dijkstraBtn" onclick="chooseAStar()" style="width: 150px;">Run</button>
+
+            <div class="dropdown-maze" style="position: relative; display: inline-block;">
+                <button id="mazeBtn" style="width: 150px;">Maze Options</button>
+                <div class="dropdown-mazeBtn">
+                    <button onclick="pressMaze1()">Maze 1</button>
+                    <button onclick="pressMaze2()">Maze 2</button>
+                    <button onclick="pressMaze3()">Random</button>
+                </div>
+            </div>
+
+           
+
+            
+        </div>      
+       
+    
+        <form name="refreshForm">
+            <input type="hidden" name="visited" value="" />
+        </form>
+    </body>
+</html>

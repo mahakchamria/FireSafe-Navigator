@@ -1,0 +1,247 @@
+.gridBox {
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 2px;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-left: 1px;
+    margin-right: 1px;
+    transition:800ms ease all;
+}
+
+body {
+    margin: 2px;
+    overflow-y: hidden;
+}
+
+.startBtnDiv {
+    justify-content: center;
+    text-align: center;
+    text-size-adjust: 30px;
+    background-color: rgb(39, 37, 37);
+    outline-style: ridge;
+    overflow-y: visible;
+    height: 205px;
+}
+
+.startBtnDiv button {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    border-radius: 8px;
+    border: 2px solid white;
+    outline: none;
+    background-color: rgb(39, 37, 37);
+    color: white;
+    height: 50px;
+    font-size: 15px;
+}
+
+.startBtnDiv h1 {
+    font-family: 'American Typewriter', serif;
+}
+
+.row {
+    outline-style: none;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+#dijkstraBtn {
+    background-color: rgb(26, 188, 156);
+}
+
+#chooseAlgo:hover {
+    border: 2px solid rgb(26, 188, 156);
+    color: rgb(26, 188, 156);
+}
+
+.dropdown-chooseAlgo:hover .dropdown-algo {
+    display: block;
+}
+
+.dropdown-maze:hover .dropdown-mazeBtn {
+    display: block;
+}
+
+#insertCheckpoint:hover {
+    border: 2px solid rgb(26, 188, 156);
+    color: rgb(26, 188, 156);
+}
+
+#reset:hover {
+    border: 2px solid rgb(26, 188, 156);
+    color: rgb(26, 188, 156);
+}
+
+#dijkstraBtn:hover {
+    border: 2px solid black;
+    color: black;
+}
+
+#visualizerToggle:hover {
+    /* border: 2px solid rgb(26, 188, 156);
+    color: rgb(26, 188, 156); */
+}
+
+#speedBtn:hover {
+    border: 2px solid rgb(26, 188, 156);
+    color: rgb(26, 188, 156);
+}
+
+#mazeBtn:hover {
+    border: 2px solid rgb(26, 188, 156);
+    color: rgb(26, 188, 156);
+}
+
+.dropdown-algo {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
+}
+
+.dropdown-mazeBtn {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
+}
+
+.dropdown-algo button {
+    color: white;
+    border: 2px solid white;
+    display: block;
+    width: 160px;
+    height: 25px;
+}
+
+.dropdown-mazeBtn button {
+    color: white;
+    border: 2px solid white;
+    display: block;
+    width: 150px;
+    height: 25px;
+}
+
+.dropdown-algo button:hover {
+    border: 2px solid rgb(26, 188, 156);
+    color: rgb(26, 188, 156);
+}
+
+.dropdown-mazeBtn button:hover {
+    border: 2px solid rgb(26, 188, 156);
+    color: rgb(26, 188, 156);
+}
+
+.class {
+    margin-top: 20px;
+}
+
+#legendTitle {
+    font-family: "poppins-regular", sans-serif;
+    /*font-family: 'American Typewriter', serif;*/
+}
+
+.legendEntry1 {
+    margin-top: 20px;
+}
+
+
+.legendEntry2 {
+    margin-top: 20px;
+}
+
+.legendEntry3 {
+    margin-top: 20px;
+}
+
+.legendEntry4 {
+    margin-top: 20px;
+}
+
+.legendEntry5 {
+    margin-top: 20px;
+}
+
+.legendEntry6 {
+    margin-top: 20px;
+}
+
+.legendEntry7 {
+    margin-top: 20px;
+}
+
+
+
+.currentPage {
+    position: absolute;
+    top: 0px;
+    right: 2%;
+}
+
+
+.right-buttons {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+}
+
+
+
+sup {
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+}
+
+@media only screen and (min-width: 1607px) {
+    .modal-content {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .modal-content {
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width: 1430px) {
+    .legendEntry7 {
+        margin-top: 0px;
+    }
+
+    .startBtnDiv button {
+        height: 40px;
+    }
+
+    .dropdown-algo button {
+        height: 25px;
+    }
+    
+    .dropdown-mazeBtn button {
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 1283px) {
+    .legendEntry6 {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1332px) {
+    .modal-content {
+        width: 65%;
+        height: 87%;
+    }
+}
+
+@media only screen and (max-width: 1053px) {
+    .legendEntry5 {
+        margin-top: 0px;
+    }
+}
